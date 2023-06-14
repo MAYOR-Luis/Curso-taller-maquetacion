@@ -419,6 +419,14 @@ progress::-moz-progress-value {
 }
 
 /* *********Utilities************** */
+
+@media (min-width:287px){
+    .hero-image{
+        width: 100%;
+        height: auto;
+    }
+}
+
 .about > article {
     margin-bottom:2rem;
 }
@@ -669,7 +677,7 @@ progress::-moz-progress-value {
     .contact-cards{
         display: grid;
         grid-template-columns: repeat(2,48%);
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .portfolio > .container {
     display: grid;
@@ -680,6 +688,16 @@ progress::-moz-progress-value {
 
  .portfolio .section-title {
     grid-column: span 2;
+ }
+
+ .portfolio-modal {
+    max-width: 800px;
+    flex-direction: row;
+ }
+
+ .portfolio-info{
+    margin-left: 1rem;
+    align-self: center;
  }
  .services > .container {
     display: grid;
@@ -728,13 +746,9 @@ progress::-moz-progress-value {
     .portfolio > .container {
         grid-template-columns: repeat(3,1fr);
         /* align-content: center; */
-        justify-content: center;
      }
     
-     .portfolio-modal{
-        flex-direction: row;
-        max-width: 800px;
-     }
+     
 
      .portfolio-info{
         margin-left: 1rem;
@@ -747,7 +761,6 @@ progress::-moz-progress-value {
 
     .services > .container {
         grid-template-columns: repeat(3,30%);
-        justify-content: center;
         
     }
 
